@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="transaction_table_padding_left_right">2dp</dimen>
+    <dimen name="transaction_table_margin_right">1dp</dimen>
+    <dimen name="transaction_table_title_padding_top_bottom">5dp</dimen>
+
+</resources>

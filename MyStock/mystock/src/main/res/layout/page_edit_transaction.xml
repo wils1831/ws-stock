@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="horizontal"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="#ffafafaf"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:background="#ff5f5f5f"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Date"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="1dp"
+                android:background="#ffffffff"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#ff00007f"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="#ffafafaf"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:background="#ff5f5f5f"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Transaction"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff">
+
+                <Spinner
+                    android:id="@+id/spTxType"
+                    android:layout_width="125dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="#ffafafaf"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:background="#ff5f5f5f"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Stock Name"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff">
+
+                <Spinner
+                    android:id="@+id/spStockName"
+                    android:layout_width="125dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="#ffafafaf"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:background="#ff5f5f5f"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Quantity"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etQty"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="1dp"
+                android:background="#ffffffff"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="#ff00007f"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="#ffafafaf"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <TextView
+                android:id="@+id/tvPriceLabel"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:background="#ff5f5f5f"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Price"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etPrice"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="1dp"
+                android:background="#ffffffff"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:text="0"
+                android:textColor="#ff00007f"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="#ffafafaf"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:background="#ff5f5f5f"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Fee"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etFee"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="1dp"
+                android:background="#ffffffff"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:text="0"
+                android:textColor="#ff00007f"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="#ffafafaf"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:background="#ff5f5f5f"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Amount"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etAmount"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="1dp"
+                android:background="#ffffffff"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:text="0"
+                android:textColor="#ff00007f"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|right"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/btnOK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_tick" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_cross" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

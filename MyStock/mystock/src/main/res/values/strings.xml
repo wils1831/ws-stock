@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyStock</string>
+    <string name="menu_all_view">All View</string>
+    <string name="menu_stock_view">Stock View</string>
+</resources>
